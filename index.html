@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Attendance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Attendance Manager</h1>
+    </header>
+
+    <section class="card">
+        <h2>Student Profile</h2>
+        <div class="form-row">
+            <input id="studentName" placeholder="Student name">
+            <input id="course" placeholder="Course / Class">
+            <input id="required" type="number" min="0" max="100" placeholder="Required attendance (%)">
+        </div>
+        <div class="form-row" style="margin-top:8px; align-items:center;">
+            <button id="clearDataBtn" class="btn danger small">Clear All Data</button>
+            <div class="muted small" style="flex:1; text-align:right">Caution: clears saved name and subjects</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Add Subject</h2>
+        <div class="form-row">
+            <input id="subjectName" placeholder="Subject name">
+            <button id="addSubjectBtn">Add Subject</button>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Subjects & Summary</h2>
+        <table class="summary">
+            <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Total</th>
+                <th>Attended</th>
+                <th>Percentage</th>
+                <th>Status</th>
+                <th>Needed</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="subjectsTable"></tbody>
+        </table>
+    </section>
+
+
+
+
+
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>
